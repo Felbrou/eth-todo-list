@@ -1,15 +1,140 @@
 {
   "contractName": "TodoList",
-  "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/TodoList.sol\":{\"keccak256\":\"0xbd142bbd8678c24cba133b79ee1565671150fa2e5c76c9e3a81864b45baedd10\",\"urls\":[\"bzz-raw://a13cba607512f503d4734b08556677c49076916b910998e977944d83c79b2fea\",\"dweb:/ipfs/QmTiYDRoEUmruZr2y7StNLodnwJY6QsuaRfxLYVmg8VcAc\"]}},\"version\":1}",
-  "bytecode": "0x608060405260008055348015601357600080fd5b50603f8060216000396000f3fe6080604052600080fdfea264697066735822122044f342c3b4a594b26b177a2b4c5a96c7cd25ccc9c7a05916f48e3ba6d0d0258664736f6c634300080b0033",
-  "deployedBytecode": "0x6080604052600080fdfea264697066735822122044f342c3b4a594b26b177a2b4c5a96c7cd25ccc9c7a05916f48e3ba6d0d0258664736f6c634300080b0033",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "taskCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"taskCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/TodoList.sol\":{\"keccak256\":\"0x94c6b84d62617fd021b299ff7c2173497f540a37ac4433905391d825438e619d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://69467ecd384c418109e033006dd31b20db575b3df5f6648f121e7fac8e36b7aa\",\"dweb:/ipfs/Qmc1CcL8T86JwsaqS1CHSgzRXZ2WQGgpjwLRv7MNyMyyhV\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b50607d806100226000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea26469706673582212202e5a264cba1f79be656a2fc911563d1051b1842f791fc961b9c4f5d8e3e5e18564736f6c634300080b0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea26469706673582212202e5a264cba1f79be656a2fc911563d1051b1842f791fc961b9c4f5d8e3e5e18564736f6c634300080b0033",
   "immutableReferences": {},
   "generatedSources": [],
-  "deployedGeneratedSources": [],
-  "sourceMap": "27:47:1:-:0;;;69:1;52:18;;27:47;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "27:47:1:-:0;;;;;",
-  "source": "pragma solidity ^0.8.0;\r\n\r\ncontract TodoList {\r\n    uint taskCount = 0;\r\n}\r\n",
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:193:2",
+        "statements": [
+          {
+            "nodeType": "YulBlock",
+            "src": "6:3:2",
+            "statements": []
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "115:76:2",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "125:26:2",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "137:9:2"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "148:2:2",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "133:3:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "133:18:2"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "125:4:2"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "167:9:2"
+                      },
+                      {
+                        "name": "value0",
+                        "nodeType": "YulIdentifier",
+                        "src": "178:6:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "160:6:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "160:25:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "160:25:2"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "84:9:2",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "95:6:2",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "106:4:2",
+                "type": ""
+              }
+            ],
+            "src": "14:177:2"
+          }
+        ]
+      },
+      "contents": "{\n    { }\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, value0)\n    }\n}",
+      "id": 2,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "61:52:1:-:0;;;108:1;84:25;;61:52;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:52:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:25;;;;;;;;;160::2;;;148:2;133:18;84:25:1;;;;;;",
+  "source": "//SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.0;\r\n\r\ncontract TodoList {\r\n  uint public taskCount = 0;\r\n}",
   "sourcePath": "C:\\Users\\felbr\\OneDrive\\Área de Trabalho\\Contracts\\workspace\\eth-todo-list\\contracts\\TodoList.sol",
   "ast": {
     "absolutePath": "project:/contracts/TodoList.sol",
@@ -19,6 +144,7 @@
       ]
     },
     "id": 39,
+    "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -30,7 +156,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "34:23:1"
       },
       {
         "abstract": false,
@@ -44,18 +170,19 @@
           38
         ],
         "name": "TodoList",
-        "nameLocation": "36:8:1",
+        "nameLocation": "70:8:1",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
+            "functionSelector": "b6cb58a5",
             "id": 37,
             "mutability": "mutable",
             "name": "taskCount",
-            "nameLocation": "57:9:1",
+            "nameLocation": "96:9:1",
             "nodeType": "VariableDeclaration",
             "scope": 38,
-            "src": "52:18:1",
+            "src": "84:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -66,7 +193,7 @@
               "id": 35,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "52:4:1",
+              "src": "84:4:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -81,22 +208,22 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "69:1:1",
+              "src": "108:1:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
                 "typeString": "int_const 0"
               },
               "value": "0"
             },
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 39,
-        "src": "27:47:1",
+        "src": "61:52:1",
         "usedErrors": []
       }
     ],
-    "src": "0:76:1"
+    "src": "34:79:1"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/TodoList.sol",
@@ -106,6 +233,7 @@
       ]
     },
     "id": 39,
+    "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -117,7 +245,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "34:23:1"
       },
       {
         "abstract": false,
@@ -131,18 +259,19 @@
           38
         ],
         "name": "TodoList",
-        "nameLocation": "36:8:1",
+        "nameLocation": "70:8:1",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
+            "functionSelector": "b6cb58a5",
             "id": 37,
             "mutability": "mutable",
             "name": "taskCount",
-            "nameLocation": "57:9:1",
+            "nameLocation": "96:9:1",
             "nodeType": "VariableDeclaration",
             "scope": 38,
-            "src": "52:18:1",
+            "src": "84:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -153,7 +282,7 @@
               "id": 35,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "52:4:1",
+              "src": "84:4:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -168,30 +297,38 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "69:1:1",
+              "src": "108:1:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
                 "typeString": "int_const 0"
               },
               "value": "0"
             },
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 39,
-        "src": "27:47:1",
+        "src": "61:52:1",
         "usedErrors": []
       }
     ],
-    "src": "0:76:1"
+    "src": "34:79:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.11+commit.d7f03943.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xeEc8FEa9ad90A7BD4A3Ab72f15ADE4373fcaF76c",
+      "transactionHash": "0x76cf2454f101a3088eda082d17835b2fddf8a9f8fe7a58975640febbb1598e5e"
+    }
+  },
   "schemaVersion": "3.4.5",
-  "updatedAt": "2022-02-28T16:42:12.022Z",
+  "updatedAt": "2022-02-28T18:23:47.961Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
