@@ -13,7 +13,7 @@ contract TodoList {
 
   mapping(uint => Task) public tasks;
 
-  constructor() public {
+  constructor() {
     createTask("Smart Contract Implementation by @Felbrou");
   }
 
